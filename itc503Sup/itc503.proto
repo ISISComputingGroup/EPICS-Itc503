@@ -42,7 +42,7 @@ get_sa_flo{out"R19"; in"R%f"}
 get_sta{out"X"; in "X0%{A0|A1}%(\$1.VAL){C0|C1|C2|C3}"}
 
 
-#Control comamnds
+#Control commands
 
 set_act{out"%{A0|A1}"; in "A"}
 set_d{out"D%.1f"; in"D"}
