@@ -48,4 +48,4 @@ set_p{out"P%.2f"; in"P"}
 set_ttemp{out"T%.2f"; in"T"}
 set_ctrl{out"%{C0|C1|C2|C3}"; in "C"}
 set_ctrl_chan{out"%{H1|H2|H3}";in"H"}
-set_auto_pid{out"%{L0|L}";in"L"}
+set_auto_pid{out"%{L0|L1}";in"L"}
