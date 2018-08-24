@@ -33,7 +33,7 @@ get_gflow{out"R7"; in"R%f"}
 get_p{out"R8"; in"R%f"}
 get_i{out"R9"; in"R%f"}
 get_d{out"R10"; in"R%f"}
-get_sta{out"X"; in "X0%{A0|A1|A2|A3}%(\$1CTRL.VAL){C0|C1|C2|C3}%(\$1SWEEPING.VAL){S0|S1|}%(\$1CTRLCHANNEL.VAL){H1|H2|H3|}%(\$1AUTOPID.VAL){L0|L1}"}
+get_sta{out"X"; in "X0%{A0|A1|A2|A3}%(\$1CTRL.VAL){C0|C1|C2|C3}%(\$1SWEEPING.VAL)#{S0=0|S00=0|S1=1|S01=1|=0}%(\$1CTRLCHANNEL.VAL){H1|H2|H3|}%(\$1AUTOPID.VAL){L0|L1}"}
 
 
 #Control commands
@@ -48,4 +48,4 @@ set_p{out"P%.2f"; in"P"}
 set_ttemp{out"T%.2f"; in"T"}
 set_ctrl{out"%{C0|C1|C2|C3}"; in "C"}
 set_ctrl_chan{out"%{H1|H2|H3}";in"H"}
-set_auto_pid{out"%{L0|L}";in"L"}
+set_auto_pid{out"%{L0|L1}";in"L"}
