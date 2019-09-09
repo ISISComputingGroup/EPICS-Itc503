@@ -38,14 +38,16 @@ get_sta{out"X"; in "X0%{A0|A1|A2|A3}%(\$1CTRL.VAL){C0|C1|C2|C3}%(\$1SWEEPING.VAL
 
 #Control commands
 
-set_act{out"%{A0|A1|A2|A3}"; in "A"}
-set_d{out"D%.1f"; in"D"}
-set_i{out"I%.1f"; in"I"}
-set_maxv{out"M%.1f"; in"M"}
-set_manv{out"O%.1f"; in"O"}
-set_gflow{out"G%.1f"; in"G"}
-set_p{out"P%.2f"; in"P"}
-set_ttemp{out"T%.2f"; in"T"}
+set_remote_unlocked{out"C3"; in "C"}
+
+set_act{set_remote_unlocked; out"%{A0|A1|A2|A3}"; in "A"}
+set_d{set_remote_unlocked; out"D%.1f"; in"D"}
+set_i{set_remote_unlocked; out"I%.1f"; in"I"}
+set_maxv{set_remote_unlocked; out"M%.1f"; in"M"}
+set_manv{set_remote_unlocked; out"O%.1f"; in"O"}
+set_gflow{set_remote_unlocked; out"G%.1f"; in"G"}
+set_p{set_remote_unlocked; out"P%.2f"; in"P"}
+set_ttemp{set_remote_unlocked; out"T%.2f"; in"T"}
 set_ctrl{out"%{C0|C1|C2|C3}"; in "C"}
-set_ctrl_chan{out"%{H1|H2|H3}";in"H"}
-set_auto_pid{out"%{L0|L1}";in"L"}
+set_ctrl_chan{set_remote_unlocked; out"%{H1|H2|H3}";in"H"}
+set_auto_pid{set_remote_unlocked; out"%{L0|L1}";in"L"}
