@@ -436,7 +436,7 @@ record(ai, "$(P)HEATERP") {
   field(SCAN, "Passive")
   field(DTYP, "stream")
   field(INP, "@itc503.proto get_htrp $(PORT)")
-  field(PREC, "0")
+  field(PREC, "1")
   field(EGU, "%")
   field(SIML, "$(P)SIM")
   field(SIOL, "$(P)SIM:HEATERV")
